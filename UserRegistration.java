@@ -25,11 +25,12 @@ public class UserRegistration {
             System.out.println("Invalid Last Name");
     }
 
+    //cleared all samples provided
     public static void email() {
         Scanner sc = new Scanner(System.in);
         System.out.println("\nEnter EMail");
         String email = sc.nextLine();
-        if (Pattern.matches("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+(?:\\.[a-zA-Z0-9]+)*$", email) == true)
+        if (Pattern.matches("^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9]+(?:\\\\.[a-zA-Z0-9]+)*$", email) == true)
             System.out.println("Valid Email");
         else
             System.out.println("Invalid Email");
@@ -57,10 +58,10 @@ public class UserRegistration {
     }
 
     public static void main(String[] args) {
-        firstName();
-        lastName();
+        //firstName();
+        // lastName();
         email();
-        mobile();
-        password();
+        //mobile();
+        //password();
     }
 }
